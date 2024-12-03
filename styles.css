@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.fiberoficial.com.br/cdn/shop/articles/academia_musculacao.jpg?v=1687444110&width=2048);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+/* Estilos do Container de Login */
+.login-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro translúcido */
+}
+ 
+/* Estilos do Formulário de Login */
+.login-form {
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+}
+ 
+.login-form h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+.input-group {
+    margin-bottom: 1.5rem;
+}
+ 
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+ 
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+ 
+.actions button {
+    background-color: #f39c12; /* Laranja */
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1.5rem;
+}
+ 
+.actions button:hover {
+    background-color: #e67e22;
+}
+ 
+.actions a {
+    display: block;
+    margin-top: 1rem;
+    color: #f39c12;
+    text-decoration: none;
+}
+ 
+.actions a:hover {
+    text-decoration: underline;
+}
+ 
+/* Responsividade */
+@media (max-width: 768px) {
+    .login-form {
+        max-width: 90%;
+    }
+}

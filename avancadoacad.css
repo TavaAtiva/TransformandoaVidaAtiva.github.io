@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #111;
+}
+
+header {
+    background-color: #333;
+    color: #f5a623;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-voltar {
+    background-color: #FF7F00;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.btn-voltar:hover {
+    background-color: #FF4500;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #f5a623;
+    color: #111;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #e5941f;
+}
+
+.exercises {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os quadrados */
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.exercise {
+    background-color: #f5f5f5;
+    border: 2px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    width: 250px; /* Largura ajustada */
+    transition: transform 0.3s ease, height 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+}
+
+.exercise img {
+    max-width: 100%; /* Limita a largura da imagem ao tamanho do quadrado */
+    max-height: 140px; /* Limita a altura para manter a proporção */
+    object-fit: cover; /* Ajusta a imagem ao quadrado sem distorção */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+    image-rendering: auto;
+}
+
+.exercise h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #ff5e00;
+}
+
+.exercise p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.instructions {
+    display: none;
+    text-align: left;
+    font-size: 0.9em;
+    color: #333;
+    padding-top: 10px;
+}
+
+.exercise.active {
+    height: auto; /* Permite o ajuste automático do tamanho ao conteúdo */
+    overflow: visible; /* Mostra as instruções completas */
+}
+
+.exercise.active .instructions {
+    display: block; /* Exibe as instruções ao clicar */
+}
+
+footer {
+    text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}

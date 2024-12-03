@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Básico - Academia</title>
+    <link rel="stylesheet" href="treinobasicoacad.css">
+</head>
+<body>
+    <!-- Botão de Voltar para a Página Principal -->
+    <a href="index.html">
+        <button class="btn-voltar">Voltar para a Página Principal</button>
+    </a>
+
+    <header>
+        <div class="header-content">
+            <h1>Treino Básico para Academia</h1>
+            <p>Inicie seu treino na academia com esses exercícios simples e eficazes!</p>
+            <a href="#exercises" class="button">Iniciar Treino</a>
+        </div>
+    </header>
+
+    <section id="exercises" class="exercises">
+        <div class="exercise" onclick="toggleInstructions('agachamento')">
+            <img src="agachamentoacad.gif" alt="Agachamento">
+            <h2>Agachamento</h2>
+            <ol id="agachamento" class="instructions">
+                <li>Fique de pé com os pés afastados na largura dos ombros.</li>
+                <li>Agache até que suas coxas fiquem paralelas ao chão.</li>
+                <li>Volte à posição inicial de forma controlada.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('supino')">
+            <img src="supino.gif" alt="Supino">
+            <h2>Supino</h2>
+            <ol id="supino" class="instructions">
+                <li>Deite-se em um banco plano, segurando a barra com as mãos na largura dos ombros.</li>
+                <li>Baixe a barra até o peito e depois empurre-a de volta para cima.</li>
+                <li>Realize o movimento de forma controlada.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('puxada-frente')">
+            <img src="puxada.gif" alt="Puxada na Frente">
+            <h2>Puxada na Frente</h2>
+            <ol id="puxada-frente" class="instructions">
+                <li>Sente-se na máquina de puxada com as costas retas.</li>
+                <li>Segure a barra com as mãos afastadas na largura dos ombros.</li>
+                <li>Traga a barra até o peito e depois retorne lentamente à posição inicial.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('leg-press')">
+            <img src="legpress.gif" alt="Leg Press">
+            <h2>Leg Press</h2>
+            <ol id="leg-press" class="instructions">
+                <li>Sentado na máquina de leg press, coloque os pés na plataforma.</li>
+                <li>Empurre a plataforma até as pernas ficarem quase esticadas.</li>
+                <li>Desça lentamente e repita o movimento.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('rosca-biceps')">
+            <img src="roscabiceps.gif" alt="Rosca de Bíceps">
+            <h2>Rosca de Bíceps</h2>
+            <ol id="rosca-biceps" class="instructions">
+                <li>Fique em pé com os pés afastados na largura dos ombros.</li>
+                <li>Segure um halter em cada mão com as palmas voltadas para cima.</li>
+                <li>Flexione os cotovelos e levante os halteres até a altura dos ombros.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('triceps')">
+            <img src="tricepspolia.gif" alt="Tríceps na Polia">
+            <h2>Tríceps na Polia</h2>
+            <ol id="triceps" class="instructions">
+                <li>Fique em pé em frente a uma máquina de polia alta.</li>
+                <li>Segure a barra com as palmas voltadas para baixo.</li>
+                <li>Empurre a barra para baixo, estendendo completamente os cotovelos.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('abdominal')">
+            <img src=abdominalacad.gif alt="Abdominal">
+            <h2>Abdominal</h2>
+            <ol id="abdominal" class="instructions">
+                <li>Deite-se de costas, com os joelhos flexionados e os pés no chão.</li>
+                <li>Levante o tronco, aproximando os ombros dos joelhos.</li>
+                <li>Volte lentamente à posição inicial.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('remada')">
+            <img src="remada.gif" alt="Remada">
+            <h2>Remada</h2>
+            <ol id="remada" class="instructions">
+                <li>Sente-se na máquina de remada com os pés firmemente posicionados.</li>
+                <li>Puxe a barra em direção ao seu torso, mantendo as costas retas.</li>
+                <li>Retorne lentamente à posição inicial.</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 - Treino Básico. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script>
+    function toggleInstructions(id) {
+        const element = document.getElementById(id).parentNode;
+        element.classList.toggle('open');
+    }
+</script>
+</html>

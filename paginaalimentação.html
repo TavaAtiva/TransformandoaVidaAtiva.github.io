@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrição e Alimentação</title>
+    <link rel="stylesheet" href="paginaalimentação.css">
+    <script src="paginaalimentação.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <!--Botão de Voltar para a Página PrincipaL !-->
+        <a href="index.html">
+        <button class="btn-voltar">Voltar para a Página Principal</button>
+</a>
+        <div class="container">
+            <h1 class="logo">Nutrição & Bem-Estar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#nutricao">Nutrição</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#imc">Calculadora IMC</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="nutricao" class="section-padding">
+        <div class="container">
+            <h2>Nutrição e Alimentação: Cuide de Sua Saúde</h2>
+            <p>Manter uma alimentação equilibrada é essencial para a saúde e bem-estar. A nutrição adequada não só promove uma vida saudável, mas também fortalece o sistema imunológico, controla o peso e melhora o desempenho físico.</p>
+        </div>
+    </section>
+
+    <section id="beneficios" class="section-padding">
+        <div class="container">
+            <h2>Benefícios de uma Alimentação Balanceada</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Melhora a Energia</h3>
+                    <p>Com os nutrientes certos, seu corpo mantém-se energizado e pronto para as atividades do dia a dia.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Prevenção de Doenças</h3>
+                    <p>Uma boa alimentação reduz o risco de doenças como diabetes, hipertensão e problemas cardíacos.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Controle de Peso</h3>
+                    <p>Comendo bem, é possível controlar o peso de forma saudável, evitando o sobrepeso e a obesidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="info">
+    <img src="Infografico- Transformando a Vida Ativa.jpeg" alt=""> </img>
+    </div>
+
+    <section id="imc" class="section-padding bg-dark">
+        <div class="container">
+            <h2>Calculadora de IMC</h2>
+            <p>Calcule o seu IMC para saber como está o seu peso em relação à altura. Isso ajuda a monitorar a saúde de forma eficaz.</p>
+
+            <div class="calculator-container">
+                <form id="imcForm">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" required>
+                    <label for="altura">Altura (cm):</label>
+                    <input type="number" id="altura" required>
+                    <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+                </form>
+                <div id="resultadoIMC" class="resultado"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nutrição & Bem-Estar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

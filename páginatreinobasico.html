@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Básico - Contra o Sedentarismo</title>
+    <link rel="stylesheet" href="treinobasico.css">
+</head>
+<body>
+    <!-- Botão de Voltar para a Página Principal -->
+    <a href="index.html">
+        <button class="btn-voltar">Voltar para a Página Principal</button>
+    </a>
+
+    <header>
+        <div class="header-content">
+            <h1>Treino Básico</h1>
+            <p>Intensifique seu treino e desafie seus limites com exercícios de nível intermediário!</p>
+            <a href="#exercises" class="button">Iniciar Treino</a>
+        </div>
+    </header>
+
+    <section id="exercises" class="exercises">
+        <!-- Exercício 1: Prancha -->
+        <div class="exercise" onclick="toggleInstructions('prancha')">
+            <img src="prancha.gif"></img>
+            <h2>Prancha</h2>
+            <p>Fortaleça o core e a resistência com a prancha.</p>
+            <ul id="prancha" class="instructions">
+                <li>Posicione-se no chão, com os cotovelos apoiados.</li>
+                <li>Mantenha o corpo alinhado e o abdômen firme.</li>
+                <li>Segure a posição por 30 segundos a 1 minuto.</li>
+            </ul>
+        </div>
+        
+        <!-- Exercício 2: Afundo -->
+        <div class="exercise" onclick="toggleInstructions('afundo')">
+            <img src="afundo.gif"></img>
+            <h2>Afundo</h2>
+            <p>Fortaleça as pernas e glúteos com o afundo.</p>
+            <ul id="afundo" class="instructions">
+                <li>Dê um passo à frente, flexionando o joelho.</li>
+                <li>Mantenha o tronco reto e retorne à posição inicial.</li>
+                <li>Repita com a outra perna.</li>
+            </ul>
+        </div>
+
+        <!-- Exercício 3: Burpee -->
+        <div class="exercise" onclick="toggleInstructions('burpee')">
+            <img src="burpee.gif" ></img>
+            <h2>Burpee</h2>
+            <p>Melhore seu condicionamento físico com burpees.</p>
+            <ul id="burpee" class="instructions">
+                <li>Inicie de pé, desça ao chão e faça uma flexão.</li>
+                <li>Suba e dê um salto ao final.</li>
+                <li>Repita por 10 a 15 repetições.</li>
+            </ul>
+        </div>
+
+        <!-- Exercício 4: Agachamento -->
+        <div class="exercise" onclick="toggleInstructions('agachamento')">
+            <img src="agachamento.gif"></img>
+            <h2>Agachamento</h2>
+            <p>Fortaleça as pernas e glúteos com o agachamento.</p>
+            <ul id="agachamento" class="instructions">
+                <li>Fique de pé com os pés na largura dos ombros.</li>
+                <li>Flexione os joelhos e os quadris como se fosse sentar em uma cadeira.</li>
+                <li>Desça até os quadris ficarem paralelos ao chão e retorne à posição inicial.</li>
+            </ul>
+        </div>
+
+        <!-- Exercício 5: Flexão de Braços -->
+        <div class="exercise" onclick="toggleInstructions('flexao')">
+            <img src="flexao.gif"></img>
+            <h2>Flexão de Braços</h2>
+            <p>Fortaleça o peito, ombros e tríceps com a flexão.</p>
+            <ul id="flexao" class="instructions">
+                <li>Deite-se de barriga para baixo, com as mãos na largura dos ombros.</li>
+                <li>Flexione os cotovelos até o peito quase tocar o chão e depois estenda os braços.</li>
+                <li>Repita o movimento por 10 a 15 repetições.</li>
+            </ul>
+        </div>
+
+        <!-- Exercício 6: Elevação de Quadril -->
+        <div class="exercise" onclick="toggleInstructions('elevacao-quadril')">
+            <img src="elevacao.gif"></img >
+            <h2>Elevação de Quadril</h2>
+            <p>Fortaleça os glúteos e a parte inferior das costas.</p>
+            <ul id="elevacao-quadril" class="instructions">
+                <li>Deite-se de costas, com os joelhos flexionados e os pés no chão.</li>
+                <li>Levante o quadril até que o corpo forme uma linha reta dos ombros aos joelhos.</li>
+                <li>Segure por 2 segundos e retorne à posição inicial.</li>
+            </ul>
+        </div>
+
+        <!-- Exercício 7: Abdominal Crunch -->
+        <div class="exercise" onclick="toggleInstructions('abdominal-crunch')">
+            <img src="abdominal.gif"></img>
+            <h2>Abdominal Crunch</h2>
+            <p>Fortaleça o abdômen com os abdominais crunch.</p>
+            <ul id="abdominal-crunch" class="instructions">
+                <li>Deite-se de costas com os joelhos flexionados.</li>
+                <li>Eleve o tronco em direção aos joelhos, contraindo o abdômen.</li>
+                <li>Retorne lentamente à posição inicial.</li>
+            </ul>
+        </div>
+
+        <!-- Exercício 8: Flexão de Panturrilha -->
+        <div class="exercise" onclick="toggleInstructions('panturrilha')">
+            <img src="panturrilha.gif"></img>
+            <h2>Flexão de Panturrilha</h2>
+            <p>Fortaleça as panturrilhas com este exercício.</p>
+            <ul id="panturrilha" class="instructions">
+                <li>Fique em pé, com os pés na largura dos ombros.</li>
+                <li>Suba nas pontas dos pés e segure por 2 segundos.</li>
+                <li>Desça devagar até os pés ficarem completamente no chão.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Contra o Sedentarismo - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="treinobasicocasa.js"></script>
+</body>
+</html>

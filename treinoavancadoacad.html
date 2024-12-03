@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Avançado na Academia</title>
+    <link rel="stylesheet" href="avancadoacad.css">
+</head>
+<body>
+    <!-- Botão de Voltar -->
+    <a href="index.html">
+        <button class="btn-voltar">Voltar para a Página Principal</button>
+    </a>
+
+    <header>
+        <div class="header-content">
+            <h1>Treino Avançado na Academia</h1>
+            <p>Exercícios intensos para maximizar seus resultados na academia.</p>
+            <a href="#exercises" class="button">Iniciar Treino</a>
+        </div>
+    </header>
+
+    <section id="exercises" class="exercises">
+        <!-- Primeiro Exercício -->
+        <div class="exercise" onclick="toggleInstructions('leg-press')">
+            <img src="legpressacad.gif" alt="">
+            <h2>Leg Press</h2>
+            <p>Trabalhe intensamente os músculos das pernas.</p>
+            <ol id="leg-press" class="instructions">
+                <li>Sente-se no aparelho e posicione os pés na plataforma.</li>
+                <li>Empurre a plataforma até estender as pernas (sem travar os joelhos).</li>
+                <li>Volte lentamente à posição inicial.</li>
+            </ol>
+        </div>
+
+        <!-- Segundo Exercício -->
+        <div class="exercise" onclick="toggleInstructions('hack-squat')">
+            <img src="hacksquat.gif" alt="">
+            <h2>Hack Squat</h2>
+            <p>Intensifique os glúteos e quadríceps com segurança.</p>
+            <ol id="hack-squat" class="instructions">
+                <li>Posicione-se no aparelho com os ombros sob as almofadas.</li>
+                <li>Abaixe até os quadris ficarem abaixo dos joelhos.</li>
+                <li>Empurre para cima até retornar à posição inicial.</li>
+            </ol>
+        </div>
+
+        <!-- Terceiro Exercício -->
+        <div class="exercise" onclick="toggleInstructions('crucifixo-plano')">
+            <img src="crucifixoplano.gif" alt="">
+            <h2>Crucifixo Plano com Halteres</h2>
+            <p>Expanda e fortaleça o peitoral.</p>
+            <ol id="crucifixo-plano" class="instructions">
+                <li>Deite-se em um banco plano segurando halteres.</li>
+                <li>Abaixe os braços lateralmente até a altura dos ombros.</li>
+                <li>Levante os halteres de volta à posição inicial.</li>
+            </ol>
+        </div>
+
+        <!-- Quarto Exercício -->
+        <div class="exercise" onclick="toggleInstructions('pulley-frontal')">
+            <img src="pulleyfrontal.gif" alt="">
+            <h2>Pulley Frontal</h2>
+            <p>Construa força e definição nos dorsais.</p>
+            <ol id="pulley-frontal" class="instructions">
+                <li>Sente-se no aparelho e segure a barra com as mãos afastadas.</li>
+                <li>Puxe a barra até a linha do peitoral.</li>
+                <li>Volte lentamente à posição inicial.</li>
+            </ol>
+        </div>
+
+        <!-- Quinto Exercício -->
+        <div class="exercise" onclick="toggleInstructions('remada-baixa')">
+            <img src="remadabaixa.gif" alt="">
+            <h2>Remada Baixa</h2>
+            <p>Foque nas costas e no core.</p>
+            <ol id="remada-baixa" class="instructions">
+                <li>Sente-se no aparelho e segure a barra.</li>
+                <li>Puxe a barra em direção ao abdômen.</li>
+                <li>Volte lentamente à posição inicial.</li>
+            </ol>
+        </div>
+
+        <!-- Sexto Exercício -->
+        <div class="exercise" onclick="toggleInstructions('desenvolvimento-halteres')">
+            <img src="desenvolvimentohalter.gif" alt="">
+            <h2>Desenvolvimento com Halteres</h2>
+            <p>Fortaleça os ombros e o core.</p>
+            <ol id="desenvolvimento-halteres" class="instructions">
+                <li>Sente-se no banco e segure halteres na altura dos ombros.</li>
+                <li>Empurre os halteres para cima até estender os braços.</li>
+                <li>Retorne à posição inicial com controle.</li>
+            </ol>
+        </div>
+
+        <!-- Sétimo Exercício -->
+        <div class="exercise" onclick="toggleInstructions('triceps-pulley')">
+            <img src="tricepspulley.gif" alt="">
+            <h2>Tríceps no Pulley</h2>
+            <p>Defina e fortaleça os tríceps.</p>
+            <ol id="triceps-pulley" class="instructions">
+                <li>Segure a barra do pulley com as palmas para baixo.</li>
+                <li>Empurre a barra até os braços ficarem estendidos.</li>
+                <li>Volte à posição inicial sem soltar a tensão.</li>
+            </ol>
+        </div>
+
+        <!-- Oitavo Exercício -->
+        <div class="exercise" onclick="toggleInstructions('abdominal-na-polia')">
+            <img src="abdominalacad.gif" alt="">
+            <h2>Abdominal na Polia</h2>
+            <p>Desafie o abdômen com carga controlada.</p>
+            <ol id="abdominal-na-polia" class="instructions">
+                <li>Segure a corda conectada à polia alta.</li>
+                <li>Ajoelhe-se e puxe a corda em direção ao chão.</li>
+                <li>Retorne lentamente à posição inicial.</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Contra o Sedentarismo - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scriptacadavancado.js"></script>
+        
+    
+</body>
+</html>

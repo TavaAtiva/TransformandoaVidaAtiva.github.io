@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Intermediário de Academia</title>
+    <link rel="stylesheet" href="treinointeracad.css">
+</head>
+<body>
+    <!-- Botão de Voltar -->
+    <a href="index.html">
+        <button class="btn-voltar">Voltar para a Página Principal</button>
+    </a>
+
+    <header>
+        <div class="header-content">
+            <h1>Treino Intermediário - Academia</h1>
+            <p>Eleve seu desempenho com exercícios intermediários focados para academia!</p>
+            <a href="#exercises" class="button">Iniciar Treino</a>
+        </div>
+    </header>
+
+    <section id="exercises" class="exercises">
+        <div class="exercise" onclick="toggleInstructions('agachamento')">
+            <img src="agachamentolivre.gif" alt="">
+            <h2>Agachamento Livre com Barra</h2>
+            <p>Trabalhe quadríceps, glúteos e core com um exercício completo.</p>
+            <ol id="agachamento" class="instructions">
+                <li>Coloque a barra nos ombros e segure com firmeza.</li>
+                <li>Flexione os joelhos, abaixando-se até 90 graus.</li>
+                <li>Retorne à posição inicial, contraindo os glúteos.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('supino')">
+            <img src="supinoinclinado.gif" alt="">
+            <h2>Supino Inclinado com Halteres</h2>
+            <p>Foque no peitoral superior com este clássico exercício.</p>
+            <ol id="supino" class="instructions">
+                <li>Deite em um banco inclinado e segure os halteres.</li>
+                <li>Estenda os braços para cima, alinhados ao peito.</li>
+                <li>Baixe lentamente os halteres até a altura dos ombros.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('remada')">
+            <img src="remadacurvada.gif" alt="">
+            <h2>Remada Curvada com Barra</h2>
+            <p>Fortaleça as costas e os bíceps com a remada curvada.</p>
+            <ol id="remada" class="instructions">
+                <li>Segure a barra com as palmas voltadas para você.</li>
+                <li>Flexione ligeiramente os joelhos e incline-se para frente.</li>
+                <li>Puxe a barra em direção ao abdômen e volte lentamente.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('abdutora')">
+            <img src="cadeiraabdutora.gif" alt="">
+            <h2>Cadeira Abdutora</h2>
+            <p>Tonifique os glúteos e os abdutores da coxa.</p>
+            <ol id="abdutora" class="instructions">
+                <li>Posicione-se na máquina abdutora.</li>
+                <li>Empurre as almofadas para fora, contraindo os glúteos.</li>
+                <li>Volte lentamente à posição inicial.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('lateral')">
+            <img src="elevacaolateral.gif" alt="">
+            <h2>Elevação Lateral com Halteres</h2>
+            <p>Desenvolva os ombros com elevações laterais.</p>
+            <ol id="lateral" class="instructions">
+                <li>Segure um haltere em cada mão, ao lado do corpo.</li>
+                <li>Eleve os braços lateralmente até a altura dos ombros.</li>
+                <li>Volte lentamente à posição inicial.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('flexao')">
+            <img src="flexaocarga.gif" alt="">
+            <h2>Flexão com Carga</h2>
+            <p>Adicione intensidade às flexões com pesos.</p>
+            <ol id="flexao" class="instructions">
+                <li>Coloque um colete de peso ou uma anilha nas costas.</li>
+                <li>Realize a flexão, mantendo o corpo alinhado.</li>
+                <li>Suba controladamente à posição inicial.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('stiff')">
+            <img src="stiffcomhalter.gif" alt="">
+            <h2>Stiff com Halteres</h2>
+            <p>Trabalhe posteriores da coxa e glúteos com o stiff.</p>
+            <ol id="stiff" class="instructions">
+                <li>Segure halteres nas mãos, com os pés afastados.</li>
+                <li>Incline-se para frente, mantendo a coluna reta.</li>
+                <li>Retorne à posição inicial, contraindo os glúteos.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('martelo')">
+            <img src="roscamartelo.gif" alt="">
+            <h2>Rosca Martelo com Halteres</h2>
+            <p>Fortaleça os bíceps e antebraços.</p>
+            <ol id="martelo" class="instructions">
+                <li>Segure os halteres com as palmas voltadas para o corpo.</li>
+                <li>Flexione os cotovelos, trazendo os halteres até os ombros.</li>
+                <li>Volte lentamente à posição inicial.</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Contra o Sedentarismo - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleInstructions(id) {
+            const instructions = document.getElementById(id);
+            const allInstructions = document.querySelectorAll('.instructions');
+
+            // Fechar todas as outras listas antes de abrir a selecionada
+            allInstructions.forEach(instruction => {
+                if (instruction !== instructions) {
+                    instruction.style.display = 'none';
+                }
+            });
+
+            // Alternar a visibilidade da lista selecionada
+            instructions.style.display = 
+                instructions.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #f5a623;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #f5a623;
+    color: #111;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #e5941f;
+}
+
+/* Botão Voltar */
+.btn-voltar {
+    background-color: #FF7F00;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+}
+
+.btn-voltar:hover {
+    background-color: #FF4500;
+}
+
+/* Área dos exercícios */
+.exercises {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 20px; /* Espaçamento entre os blocos */
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Bloco de cada exercício */
+.exercise {
+    background-color: #f5f5f5;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    min-height: 300px; /* Altura mínima para manter os quadrados iguais */
+    transition: transform 0.3s ease, height 0.3s ease; /* Adiciona transição na altura */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+}
+
+.exercise:hover {
+    transform: scale(1.05);
+}
+
+/* Permitir que a altura se ajuste automaticamente ao abrir */
+.exercise.open {
+    height: auto; /* Altura automática para acomodar o conteúdo */
+}
+
+/* Imagem no topo do bloco */
+.exercise img {
+    width: 80%; /* Ajusta o tamanho da imagem */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Títulos e texto */
+.exercise h2 {
+    color: #f5a623;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Lista de instruções */
+.instructions {
+    display: none; /* Inicialmente escondido */
+    text-align: left;
+    margin-top: 10px;
+    color: #333;
+    font-size: 0.9em;
+    list-style-type: decimal; /* Exibe números na lista */
+    padding-left: 20px; /* Recuo para alinhar os números */
+}
+
+.instructions li {
+    margin-bottom: 5px; /* Espaçamento entre os itens */
+}
+
+/* Mostrar a lista quando o quadrado estiver aberto */
+.exercise.open .instructions {
+    display: block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}

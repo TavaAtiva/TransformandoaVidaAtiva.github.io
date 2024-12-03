@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Intermediário - Contra o Sedentarismo</title>
+    <link rel="stylesheet" href="págintermediario.css">
+</head>
+<body>
+    <!-- Botão de Voltar para a Página Principal -->
+    <a href="index.html">
+        <button class="btn-voltar">Voltar para a Página Principal</button>
+    </a>
+
+    <header>
+        <div class="header-content">
+            <h1>Treino Intermediário</h1>
+            <p>Eleve seu treino com movimentos mais desafiadores e aprimorados!</p>
+            <a href="#exercises" class="button">Iniciar Treino</a>
+        </div>
+    </header>
+
+    <section id="exercises" class="exercises">
+        <div class="exercise" onclick="toggleInstructions('agachamentoSumo')">
+            <img src="agachamentosumo.gif" alt="">
+            <h2>Agachamento Sumo</h2>
+            <ul id="agachamentoSumo" class="instructions">
+                <li>Fique de pé com as pernas afastadas além da largura dos ombros e os pés levemente para fora.</li>
+                <li>Agache lentamente, dobrando os joelhos e empurrando o quadril para trás.</li>
+                <li>Suba novamente à posição inicial e repita.</li>
+            </ul>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('flexaoAberta')">
+            <img src="flexaoaberta.gif" alt="">
+            <h2>Flexão Aberta</h2>
+            <ul id="flexaoAberta" class="instructions">
+                <li>Deite-se no chão em posição de prancha, com as mãos afastadas mais que a largura dos ombros.</li>
+                <li>Dobre os cotovelos, descendo o corpo em direção ao chão.</li>
+                <li>Empurre de volta até a posição inicial e repita.</li>
+            </ul>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('flexaoDeclinada')">
+            <img src="flexaodeclinada.gif" alt="">
+            <h2>Flexão Declinada</h2>
+            <ul id="flexaoDeclinada" class="instructions">
+                <li>Posicione os pés em uma superfície elevada e as mãos no chão.</li>
+                <li>Dobre os cotovelos, descendo o peito em direção ao chão.</li>
+                <li>Suba novamente e repita.</li>
+            </ul>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('trapezio')">
+            <img src="trapezio.gif" alt="">
+            <h2>Trapézio</h2>
+            <ul id="trapezio" class="instructions">
+                <li>Segure halteres ou garrafas com peso, com os braços ao lado do corpo.</li>
+                <li>Eleve os ombros o máximo que puder, contraindo o trapézio.</li>
+                <li>Segure por 1 a 2 segundos e abaixe lentamente.</li>
+            </ul>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('abdominalInfra')">
+            <img src="abdominalinfra.gif" alt="">
+            <h2>Abdominal Infra</h2>
+            <ul id="abdominalInfra" class="instructions">
+                <li>Deite-se de costas, com as pernas estendidas e as mãos ao lado do corpo.</li>
+                <li>Eleve as pernas juntas, sem tirar as costas do chão.</li>
+                <li>Abaixe as pernas lentamente, sem tocar o chão, e repita.</li>
+            </ul>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('abdominalSupra')">
+            <img src="abdominalsupra.gif" alt="">
+            <h2>Abdominal Supra</h2>
+            <ul id="abdominalSupra" class="instructions">
+                <li>Deite-se de costas, com os joelhos dobrados e os pés apoiados no chão.</li>
+                <li>Eleve o tronco, contraindo o abdômen, até que os ombros saiam do chão.</li>
+                <li>Volte à posição inicial devagar e repita.</li>
+            </ul>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('tricepsSentado')">
+            <img src="tricepssentado.gif" alt="">
+            <h2>Tríceps Sentado</h2>
+            <ul id="tricepsSentado" class="instructions">
+                <li>Sente-se em um banco, segurando um peso acima da cabeça com as duas mãos.</li>
+                <li>Dobre os cotovelos lentamente, abaixando o peso atrás da cabeça.</li>
+                <li>Estique os braços novamente e repita.</li>
+            </ul>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('tricepsFrances')">
+            <img src="tricepsfrances.gif" alt="">
+            <h2>Tríceps Francês</h2>
+            <ul id="tricepsFrances" class="instructions">
+                <li>Deite-se de costas em um banco, segurando um peso com ambas as mãos.</li>
+                <li>Estenda os braços acima do peito.</li>
+                <li>Dobre os cotovelos, abaixando o peso em direção à testa, e retorne à posição inicial.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Contra o Sedentarismo - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="intermediario.js"></script>
+</body>
+</html>

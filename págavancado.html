@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Avançado - Contra o Sedentarismo</title>
+    <link rel="stylesheet" href="avancado.css">
+</head>
+<body>
+    <!-- Botão de Voltar para a Página Principal -->
+    <a href="index.html">
+        <button class="btn-voltar">Voltar para a Página Principal</button>
+    </a>
+
+    <header>
+        <div class="header-content">
+            <h1>Treino Avançado</h1>
+            <p>Eleve seu treino ao próximo nível com exercícios avançados para casa!</p>
+            <a href="#exercises" class="button">Iniciar Treino</a>
+        </div>
+    </header>
+
+    <section id="exercises" class="exercises">
+        <div class="exercise" onclick="toggleInstructions('pistol-squat')">
+            <img src="pistolsquat.gif" alt="Pistol Squat">
+            <h2>Pistol Squat</h2>
+            <ol id="pistol-squat" class="instructions">
+                <li>Fique em pé com uma perna levantada na frente.</li>
+                <li>Agache lentamente mantendo o equilíbrio.</li>
+                <li>Suba controladamente e troque de perna.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('flexao-palmas')">
+            <img src="flexaopalmas.gif" alt="Flexão com Palmas">
+            <h2>Flexão com Palmas</h2>
+            <ol id="flexao-palmas" class="instructions">
+                <li>Desça ao chão em posição de flexão.</li>
+                <li>Exploda para cima e bata palmas no ar.</li>
+                <li>Retorne com controle.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('burpee-flexao')">
+            <img src="burpeecomflexao.gif" alt="Burpee com Flexão">
+            <h2>Burpee com Flexão</h2>
+            <ol id="burpee-flexao" class="instructions">
+                <li>Desça para uma flexão.</li>
+                <li>Levante e salte ao final.</li>
+                <li>Repita o movimento fluido.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('prancha-dinamica')">
+            <img src="pranchadinamica.gif" alt="Prancha Dinâmica">
+            <h2>Prancha Dinâmica</h2>
+            <ol id="prancha-dinamica" class="instructions">
+                <li>Comece na posição de prancha.</li>
+                <li>Alterne entre cotovelos e mãos.</li>
+                <li>Faça o movimento com controle.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('abdominal-bicicleta')">
+            <img src="abdominalbicicleta.gif" alt="Abdominal Bicicleta">
+            <h2>Abdominal Bicicleta</h2>
+            <ol id="abdominal-bicicleta" class="instructions">
+                <li>Deite-se de costas com as pernas elevadas.</li>
+                <li>Traga o cotovelo em direção ao joelho oposto.</li>
+                <li>Alterne os lados continuamente.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('flexao-elevada')">
+            <img src="flexaoelevada.gif" alt="Flexão Elevada">
+            <h2>Flexão Elevada</h2>
+            <ol id="flexao-elevada" class="instructions">
+                <li>Posicione os pés sobre uma superfície elevada (como um banco).</li>
+                <li>Faça uma flexão com o tronco inclinado para baixo.</li>
+                <li>Volte à posição inicial com controle.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('salto-caixa')">
+            <img src="saltonacaixa.gif" alt="Salto na Caixa Imaginária">
+            <h2>Salto na Caixa</h2>
+            <ol id="salto-caixa" class="instructions">
+                <li>Marque uma altura imaginária.</li>
+                <li>Salte para cima e volte ao chão com controle.</li>
+                <li>Repita o movimento com força.</li>
+            </ol>
+        </div>
+        <div class="exercise" onclick="toggleInstructions('escalador-cruzado')">
+            <img src="escalador.gif" alt="Escalador Cruzado">
+            <h2>Escalador Cruzado</h2>
+            <ol id="escalador-cruzado" class="instructions">
+                <li>Comece na posição de prancha.</li>
+                <li>Traga o joelho em direção ao cotovelo oposto.</li>
+                <li>Alterne os lados rapidamente.</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 - Treino Avançado. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script>
+    function toggleInstructions(id) {
+        const element = document.getElementById(id).parentNode;
+        element.classList.toggle('open');
+    }
+</script>
+</html>

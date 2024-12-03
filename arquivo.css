@@ -1,0 +1,758 @@
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('academiafundo.png') no-repeat center center/cover; /* Imagem de fundo */
+    
+}
+
+/* Header styles */
+header {
+    background-color: #3f3f3f; /* Cor de fundo preta */
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 2px solid #ff6600; /* Destaque em laranja */
+}
+#introducao {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+.texto-transformacao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff5722;
+}
+
+.texto-transformacao p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.texto-transformacao ul {
+    list-style: disc;
+    margin: 20px auto;
+    text-align: left;
+    max-width: 600px;
+}
+
+.texto-transformacao ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.texto-transformacao button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.texto-transformacao button:hover {
+    background-color: #e64a19;
+}
+.Alerta h3 {
+    color: #ddd;
+    text-align: center;
+}
+
+
+
+.top-bar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    display: inline;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #ff6600; /* Destaque em laranja */
+}
+
+.btn-login {
+    background-color: #ff6600;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #fff;
+    color: #ff6600;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6600; /* Destaque em laranja */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Estilo da Navegação */
+nav {
+    margin-left: auto; /* Empurrar nav para a direita */
+}
+
+nav ul {
+    list-style: none; /* Remover marcadores */
+    display: flex; /* Usar flexbox para nav */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remover sublinhado */
+    padding: 10px 15px; /* Espaçamento interno dos links */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição */
+}
+
+nav ul li a:hover {
+    background-color: #c0c0c0; /* Cor de fundo ao passar o mouse */
+    color: rgb(0, 0, 0); /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo do Banner */
+.banner {
+    text-align: center; /* Centralizar texto no banner */
+    padding: 50px 20px; /* Espaçamento interno */
+    background: url('banner.jpg') no-repeat center center/cover; /* Imagem de fundo */
+    color: white; /* Cor do texto */
+}
+/* Estilo da Navegação */
+nav {
+    margin-left: auto; /* Empurrar nav para a direita */
+}
+
+nav ul {
+    list-style: none; /* Remover marcadores */
+    display: flex; /* Usar flexbox para nav */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remover sublinhado */
+    transition: color 0.3s; /* Efeito de transição */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Cor ao passar o mouse */
+}
+
+/* Estilo do Banner */
+.banner {
+    text-align: center; /* Centralizar texto no banner */
+    padding: 50px 20px; /* Espaçamento interno */
+    background: url('banner-image.jpg') no-repeat center center/cover; /* Imagem de fundo */
+    color: white; /* Cor do texto */
+}
+
+.banner h2 {
+    font-size: 32px; /* Tamanho da fonte do título */
+}
+
+.banner p {
+    font-size: 18px; /* Tamanho da fonte do parágrafo */
+}
+
+.banner button {
+    padding: 10px 20px; /* Espaçamento do botão */
+    background-color: #FFD700; /* Cor de fundo do botão */
+    color: #4CAF50; /* Cor do texto do botão */
+    border: none; /* Remover borda */
+    cursor: pointer; /* Cursor de mão */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.banner button:hover {
+    background-color: #4CAF50; /* Cor ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}/* Reset de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #464646;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    size: 50px;
+}
+
+header h1 {
+    font-size: 3.0rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e67e22;
+}
+
+/* Estilos para a seção Home */
+#home .banner {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #3f3f3f; /* Cor de fundo chamativa */
+    color: #fff;
+}
+
+#home .banner h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#home .banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#home .banner ul {
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: 0;
+    margin: 20px 0;
+}
+
+#home .banner ul li {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.2); /* Fundo semitransparente */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#home .banner button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: #3f3f3f;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#home .banner button:hover {
+    background-color: #e64a19;
+    color: #fff;
+}
+/* Estilo para a seção Sedentarismo */
+#sedentarismo {
+    background-color: #3f3f3f; /* Fundo cinza claro */
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#sedentarismo .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#sedentarismo .text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    color: #ffffff;
+}
+
+#sedentarismo h2 {
+    font-size: 2.5em;
+    color: #ff6f00; /* Laranja */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#sedentarismo h4 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#sedentarismo p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#sedentarismo .image {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+
+#sedentarismo .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Planos Section */
+#planoscasa {
+    padding: 3rem 2rem;
+    text-align: center;
+    font-size:medium;
+    
+}
+
+
+.planos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+h2{
+    font-size: xx-large;
+}
+
+
+.plano-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.plano-card button {
+    background-color: #f39c12;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#planosacademia {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.planosacad-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.planoacad-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.planoacad-card button {
+    background-color: #f39c12;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Alimentação e Nutrição Section */
+#alimentacao-nutricao {
+    padding: 50px 20px;
+    background-color: #3f3f3f; /* Cor de fundo clara para diferenciar */
+}
+
+#alimentacao-nutricao .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#alimentacao-nutricao .text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#alimentacao-nutricao .text h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#alimentacao-nutricao .text h4 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#alimentacao-nutricao .text p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+#alimentacao-nutricao .text a {
+    font-size: 2rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#alimentacao-nutricao .text a:hover {
+    text-decoration: underline;
+}
+
+#alimentacao-nutricao .image {
+    flex: 1;
+    text-align: center;
+}
+
+#alimentacao-nutricao .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Estilo geral da seção */
+#quem-somos {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px;
+    background-color: #3f3f3f; /* Fundo claro */
+}
+
+#quem-somos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* Cor do título */
+}
+#quem-somos p{
+    color: #c0c0c0;
+}
+
+/* Grid para os integrantes */
+.integrantes {
+    display: grid; /* Ativa o Grid Layout */
+    grid-template-columns: repeat(4, 1fr); /* Quatro colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-items: center; /* Centraliza os itens no grid */
+}
+.equipe-container h3 {
+    color: #ddd;
+
+}
+
+/* Estilo dos cartões dos integrantes */
+.integrante {
+    text-align: center;
+}
+
+.integrante img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Garante que as imagens preencham o espaço */
+    border-radius: 50%; /* Formato circular */
+    border: 3px solid #ff6600; /* Borda com destaque */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease;
+}
+
+.integrante img:hover {
+    transform: scale(1.1); /* Zoom ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+.integrante p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+
+#referencias {
+    background-color: #3f3f3f; /* Cor de fundo suave para destacar a seção */
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+#referencias h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#referencias p {
+    font-size: 1.1rem;
+    color: #888888;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Contêiner que agrupa as referências */
+.referencias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para cada item de referência */
+.referencia {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.referencia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.referencia h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.referencia p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.referencia a {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.referencia a:hover {
+    text-decoration: underline;
+}
+
+/* Adicionando uma margem para a parte inferior da página */
+#referencias footer {
+    margin-top: 40px;
+}
+/* Estilo para a seção de agradecimentos */
+#agradecimentos {
+    background-color: #3f3f3f;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#agradecimentos h2 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#agradecimentos p {
+    font-size: 1.1em;
+    color: #000000;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.agradecimentos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Espaço entre os cartões */
+}
+
+.agradecimento-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Tamanho fixo para os cartões */
+    text-align: center;
+}
+
+.agradecimento-card img {
+    width: 100px; /* Tamanho consistente para as fotos */
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.agradecimento-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.agradecimento-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+
+.equipe-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;}
+
+.div10 {
+    width: 10px;
+    size: 10px;
+}
+/* Contato Section */
+#contato {
+    background-color: #3f3f3f;
+    padding: 50px 20px;
+    text-align:center;
+}
+
+#contato h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.informacoes-contato {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.informacoes-contato a {
+    color: #ff6600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.informacoes-contato a:hover {
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Botões de Contato */
+.form-contato {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.form-contato a button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.form-contato a button:hover {
+    background-color: #e55b00;
+}
+.p15{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+

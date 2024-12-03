@@ -1,0 +1,149 @@
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #111;
+}
+
+/* Estilo para o header */
+header {
+    background-color: #333;
+    color: #f5a623;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo do botão de voltar */
+.btn-voltar {
+    background-color: #FF7F00; /* Cor laranja */
+    color: #fff; /* Texto branco */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-voltar:hover {
+    background-color: #FF4500; /* Cor laranja mais escuro ao passar o mouse */
+}
+
+/* Estilos para o conteúdo do header */
+.header-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Estilo para o botão principal */
+.button {
+    text-decoration: none;
+    background-color: #f5a623;
+    color: #111;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #e5941f;
+}
+
+/* Estilo para a seção de exercícios */
+.exercises {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+    justify-content: space-around; /* Distribui os itens com espaçamento */
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+    gap: 20px; /* Adiciona espaço entre os itens */
+}
+
+/* Estilo para cada exercício */
+.exercise {
+    background-color: #f5f5f5;
+    border: 2px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    flex: 1 1 250px; /* Flexbox ajustado para permitir redimensionamento */
+    max-width: 250px; /* Limita o tamanho máximo */
+    min-width: 200px; /* Tamanho mínimo */
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Espalha os conteúdos, deixando espaço entre imagem, título e descrição */
+}
+
+.exercise:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para as imagens */
+.exercise video {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do quadrado */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Espaço entre a imagem e o título */
+}
+.exercise img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do quadrado */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Espaço entre a imagem e o título */
+}
+
+/* Ajustes para os títulos dentro dos quadrados */
+.exercise h2 {
+    color: #f5a623;
+    font-size: 1.6em;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Espaço entre o título e a descrição */
+}
+
+/* Estilo para as instruções */
+.instructions {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.instructions li {
+    margin-bottom: 8px;
+}
+
+/* Estilo do footer */
+footer {
+    text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
